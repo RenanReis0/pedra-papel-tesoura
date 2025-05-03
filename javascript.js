@@ -1,3 +1,9 @@
+const btnPedra = document.querySelector("#jogue-pedra")
+const btnPapel = document.querySelector("#jogue-pedra")
+const btnTesoura = document.querySelector("#jogue-pedra")
+
+
+
 let humanScore = 0;
 let computerScore = 0;
 let empates = 0
@@ -15,17 +21,8 @@ function getComputerChoice() {
     }
 }
 
-function getHumanChoice() {
-    let escolha = prompt("Escolha pedra, papel ou tesoura").toLowerCase()
-    if(escolha == "pedra"){
-        return escolha
-    } else if (escolha == "papel"){
-        return escolha
-    } else if (escolha == "tesoura"){
-        return escolha
-    } else{
-        return getHumanChoice()
-    }
+function getHumanChoice(){
+    
 }
 
 function playRound(computerChoice, humanChoice) {
